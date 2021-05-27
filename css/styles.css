@@ -40,6 +40,11 @@ h1 {
   text-align: center;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
 button:hover,
 button:focus {
   background-color: var(--excretion-color);
@@ -56,7 +61,7 @@ body {
 }
 
 .container {
-  width: 1170px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: 200px;
@@ -68,10 +73,13 @@ body {
   list-style: none;
 }
 
+.total-main-nav {
+  display: flex;
+}
+
 .main-nav {
   display: flex;
   align-items: center;
-  height: 80px;
 }
 
 .navigation a:hover,
@@ -104,17 +112,15 @@ body {
 .cont .item:first-child {
   margin-right: 32px;
 }
+
 .hero {
-  background-color: var(--background-footer);
   text-align: center;
-  width: 1600px;
-  height: 600px;
-  padding-top: 195px;
-  padding-bottom: 90px;
-  box-sizing: border-box;
+  background-color: var(--background-footer);
+  padding-bottom: 200px;
 }
 .hero-title {
-  padding-bottom: 35px;
+  margin: 0;
+  margin-bottom: 35px;
 }
 
 /* head */
@@ -133,6 +139,7 @@ body {
 }
 
 .logo {
+  display: flex;
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -157,12 +164,10 @@ body {
 
 .featur {
   padding-top: 78px;
-  margin-bottom: 94px;
 }
 
 .features {
   display: flex;
-  flex-wrap: wrap;
 }
 
 .features .item {
@@ -184,7 +189,8 @@ body {
 }
 
 .what-we-do .title {
-  margin-top: 0;
+  padding-top: 94px;
+  margin: 0;
   margin-bottom: 50px;
   text-align: center;
 }
@@ -198,21 +204,22 @@ body {
   margin-right: 30px;
 }
 .what-we-do {
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 
 .our-team {
   background-color: var(--background-fon);
+  padding-bottom: 94px;
 }
 
-.our-team h2,
-h3,
+.our-team h3,
 p {
   margin-top: 0;
   margin-bottom: 0;
 }
 
 .our-team .title {
+  margin: 0;
   padding-top: 94px;
   margin-bottom: 50px;
   text-align: center;
@@ -248,11 +255,15 @@ p {
 .filter-buttons {
   display: flex;
   justify-content: center;
-  margin-top: 94px;
   margin-bottom: 50px;
 }
+
 .portfolio .item:not(:last-child) {
   margin-right: 8px;
+}
+
+.portfolio {
+  padding-top: 94px;
 }
 
 .filter {
@@ -291,13 +302,21 @@ p {
   margin-bottom: 30px;
 }
 
+.projects-section {
+  padding-bottom: 94px;
+}
+
 footer {
   background-color: var(--background-footer);
 }
 
-.footer-top {
+.footer-section {
   padding-top: 60px;
-  margin-bottom: 20px;
+  padding-bottom: 60px;
+}
+
+.bottom-contacts {
+  margin-top: 20px;
 }
 
 .adress a {

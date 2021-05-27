@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="./css/modern-normalize.css"> -->
+    <link rel="stylesheet" href="./css/modern-normalize.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -17,34 +17,37 @@
 <body>
     <!--Шапка сайта-->
     <header>
-
-        <nav class="container main-nav">
-            <a href="./index.html" class="logo">
-                Web<span class="logo-black-part">Studio</span>
-            </a>
-            <ul class="navigation list">
-                <li class="item"><a href="./index.html" class="current link">Студия</a></li>
-                <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
-                <li class="item"><a href="" class="link">Контакты</a></li>
-            </ul>
-
-            <ul class=" navigation list cont ">
-                <li class="item"><a href=" mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-                <li class="item"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
-            </ul>
-        </nav>
-
+        <div class="container total-main-nav">
+            <nav class="main-nav">
+                <a href="./index.html" class="logo">
+                    Web<span class="logo-black-part">Studio</span>
+                </a>
+                <ul class="navigation list">
+                    <li class="item"><a href="./index.html" class="current link">Студия</a></li>
+                    <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
+                    <li class="item"><a href="" class="link">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="cont">
+                <ul class=" navigation list ">
+                    <li class="item"><a href=" mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
+                    <li class="item"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+                </ul>
+            </div>
+        </div>
     </header>
 
     <main>
-        <div class="hero">
-            <section class="container">
-                <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero-title">Эффективные решения <br>для вашего бизнеса</br></h1>
                 <button class="buttons" type="button">Заказать услугу</button>
-            </section>
-        </div>
+            </div>
+        </section>
 
         <!--Особенности-->
+
         <section>
             <div class="container featur">
                 <h2 class="invisible-title">Особенности</h2>
@@ -126,24 +129,24 @@
 
     <!-- футер -->
     <footer>
-        <div class="container">
-            <div class="footer-top">
+        <section class="container">
+            <div class="footer-section">
                 <a class="logo" href="./index.html">
                     Web<span class="logo-white-part">Studio</span>
                 </a>
-            </div>
-            <address class="navigation">
-                <ul>
-                    <li class="adress"><a href="https://goo.gl/maps/8h1LLdM3j7cUWd1i9" target="_blank"
-                            rel="noreferrer noopener">г.
-                            Киев,
-                            пр-т Леси Украинки, 26</a></li>
-                    <li class="contacts"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                    <li class="contacts"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-                </ul>
-            </address>
 
-        </div>
+                <address class="navigation bottom-contacts">
+                    <ul class="list">
+                        <li class="adress"><a href="https://goo.gl/maps/8h1LLdM3j7cUWd1i9" target="_blank"
+                                rel="noreferrer noopener">г.
+                                Киев,
+                                пр-т Леси Украинки, 26</a></li>
+                        <li class="contacts"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        <li class="contacts"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+                    </ul>
+                </address>
+            </div>
+        </section>
     </footer>
 </body>
 
