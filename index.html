@@ -28,12 +28,10 @@
                     <li class="item"><a href="" class="link">Контакты</a></li>
                 </ul>
             </nav>
-            <div class="cont">
-                <ul class=" navigation list ">
-                    <li class="item"><a href=" mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-                    <li class="item"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
-                </ul>
-            </div>
+            <ul class=" navigation list cont">
+                <li class="item"><a href=" mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
+                <li class="item"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+            </ul>
         </div>
     </header>
 
@@ -48,8 +46,8 @@
 
         <!--Особенности-->
 
-        <section>
-            <div class="container featur">
+        <section class="featur">
+            <div class="container ">
                 <h2 class="invisible-title">Особенности</h2>
                 <ul class="features list">
                     <li class="item">
@@ -81,20 +79,22 @@
         </section>
 
         <!--Чем мы занимаемся-->
-        <section class="container what-we-do">
-            <h2 class="title">Чем мы занимаемся</h2>
-            <ul class="list content">
-                <li class="item">
-                    <img src="img/box-1.jpg" alt="image-programer-working-his-desk-office" width="370">
-                </li>
-                <li class="item">
-                    <img src="img/box-2.jpg" alt="web-designers-are-developing-application" width="370">
-                </li>
-                <li class="item">
-                    <img src="img/box-3.jpg"
-                        alt="creative-artist-web-design-with-working-colour-selection-graphic-tablet" width="370">
-                </li>
-            </ul>
+        <section class="what-we-do">
+            <div class="container">
+                <h2 class="title">Чем мы занимаемся</h2>
+                <ul class="list content">
+                    <li class="item">
+                        <img src="img/box-1.jpg" alt="image-programer-working-his-desk-office" width="370">
+                    </li>
+                    <li class="item">
+                        <img src="img/box-2.jpg" alt="web-designers-are-developing-application" width="370">
+                    </li>
+                    <li class="item">
+                        <img src="img/box-3.jpg"
+                            alt="creative-artist-web-design-with-working-colour-selection-graphic-tablet" width="370">
+                    </li>
+                </ul>
+            </div>
         </section>
 
         <!--Наша команда-->
@@ -104,23 +104,31 @@
                 <ul class="team-card list">
                     <li class="item card">
                         <img src="img/team-card-1.jpg" alt="img-card-1" width="270">
-                        <h3>Игорь Демьяненко</h3>
-                        <p>Product Designer</p>
+                        <div class="card-text">
+                            <h3>Игорь Демьяненко</h3>
+                            <p>Product Designer</p>
+                        </div>
                     </li>
                     <li class="item card">
                         <img src="img/team-card-2.jpg" alt="img-card-2" width="270">
-                        <h3>Ольга Репина</h3>
-                        <p>Frontend Developer</p>
+                        <div class="card-text">
+                            <h3>Ольга Репина</h3>
+                            <p>Frontend Developer</p>
+                        </div>
                     </li>
                     <li class="item card">
                         <img src="img/team-card-3.jpg" alt="img-card-3" width="270">
-                        <h3>Николай Тарасов</h3>
-                        <p>Marketing</p>
+                        <div class="card-text">
+                            <h3>Николай Тарасов</h3>
+                            <p>Marketing</p>
+                        </div>
                     </li>
                     <li class="item card">
                         <img src="img/team-card-4.jpg" alt="img-card-4" width="270">
-                        <h3>Михаил Ермаков</h3>
-                        <p>UI Designer</p>
+                        <div class="card-text">
+                            <h3>Михаил Ермаков</h3>
+                            <p>UI Designer</p>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -128,25 +136,23 @@
     </main>
 
     <!-- футер -->
-    <footer>
-        <section class="container">
-            <div class="footer-section">
-                <a class="logo" href="./index.html">
-                    Web<span class="logo-white-part">Studio</span>
-                </a>
+    <footer class="footer-section">
+        <div class="container">
+            <a class="logo" href="./index.html">
+                Web<span class="logo-white-part">Studio</span>
+            </a>
 
-                <address class="navigation bottom-contacts">
-                    <ul class="list">
-                        <li class="adress"><a href="https://goo.gl/maps/8h1LLdM3j7cUWd1i9" target="_blank"
-                                rel="noreferrer noopener">г.
-                                Киев,
-                                пр-т Леси Украинки, 26</a></li>
-                        <li class="contacts"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                        <li class="contacts"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-                    </ul>
-                </address>
-            </div>
-        </section>
+            <address class="navigation bottom-contacts">
+                <ul class="list">
+                    <li class="contacts white"><a href="https://goo.gl/maps/8h1LLdM3j7cUWd1i9" target="_blank"
+                            rel="noreferrer noopener">г.
+                            Киев,
+                            пр-т Леси Украинки, 26</a></li>
+                    <li class="contacts"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li class="contacts"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+                </ul>
+            </address>
+        </div>
     </footer>
 </body>
 
